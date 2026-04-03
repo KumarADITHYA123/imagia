@@ -103,7 +103,7 @@ export default function Generator() {
   const [loading, setLoading] = useState(false);
   const [guidance, setGuidance] = useState([7.5]);
   const [strength, setStrength] = useState([1]);
-  const [model, setModel] = useState("sxdl-lightning");
+  const [model, setModel] = useState("sdxl-lightning");
   const [imgUrl, setImgUrl] = useState("");
   const [tperformance, setPerformance] = useState(0);
   const [remainingRequests, setRemainingRequests] = useState({
@@ -112,10 +112,7 @@ export default function Generator() {
   });
 
   const url = useMemo(
-    () =>
-      process.env.NODE_ENV === "production"
-        ? process.env.NEXT_PUBLIC_URL
-        : "http://127.0.0.1:8787/img",
+    () => "/api/generate",
     []
   );
 

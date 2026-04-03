@@ -7,10 +7,10 @@ import Clarity from "@/components/Clarity";
 const sora = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Image Generator",
+  title: "Imagia - AI Image Generator",
   description:
-    "Generate images using SDXL and dreamshaper models. Made using Next.js and Cloudflare.",
-  metadataBase: new URL("https://img-gen7.netlify.app/"),
+    "Generate images using SDXL and Flux models.",
+  metadataBase: new URL("http://localhost:3000"),
 };
 
 export default function RootLayout({
