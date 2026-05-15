@@ -1,4 +1,4 @@
-# Iimagia — AI Image Generator
+# imagia — AI Image Generator
 
 A text-to-image platform built with Next.js that lets users generate images from text prompts using multiple AI models including SDXL, Flux Schnell, Stable Diffusion, and Dreamshaper.
 
